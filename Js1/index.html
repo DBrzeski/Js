@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+<script src="script.js"></script>
+<style>
+    #shame,#zieew,#normal,#normal-buttons{
+        float:left;
+        padding:10px;
+    }
+</style>
+</head>
+<body>
+    <div id = "shame">
+        Shame: <br>
+        <input type="text" id="field-1-1" ><br>
+        <input type="text" id="field-2-1"><br>
+        <input type="text" id="field-3-1"><br>
+        <input type="text" id="field-4-1"><br>
+        <button onclick="calculate()">Przelicz</button>
+        <div id="output" style = "height:200px;">
+        </div>
+    </div>
+    <div id = "zieew">
+        Zieew:<br>
+        <input type="text" id="field-1-2" onchange="calculate2()"><br>
+        <input type="text" id="field-2-2" onchange="calculate2()"><br>
+        <input type="text" id="field-3-2" onchange="calculate2()"><br>
+        <input type="text" id="field-4-2" onchange="calculate2()"><br>
+        <div id="output2" style = "height:200px;">
+        </div>
+    </div>
+    <div id = "normal">
+        Normal:<br>
+        <input type="text" id="field" onchange="calculate3()"><br>
+        <input type="text" id="field" onchange="calculate3()"><br>
+        <input type="text" id="field" onchange="calculate3()"><br>
+        
+    </div>
+    <div id = "normal-buttons">
+        <button onclick="addField()">Dodaj Pole</button>
+        <button onclick="calculate3()">Licz</button>
+        <div id="output2" style = "height:200px;">
+    </div>
+    </div>
+    
+</body>
