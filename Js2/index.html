@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="slider">
+        <div id="slides" class="slides">
+        	<img src="http://picsum.photos/seed/picsum/600/100" alt="">
+        	<img src="http://picsum.photos/seed/picsum/600/200" alt="">
+        	<img src="http://picsum.photos/seed/picsum/600/300" alt="">
+        	<img src="http://picsum.photos/seed/picsum/600/400" alt="">
+        	<img src="http://picsum.photos/seed/picsum/600/500" alt="">
+        	<img src="http://picsum.photos/seed/picsum/600/600" alt="">
+        </div>
+        
+    </div>
+    <div class="nav">
+        <button id="prev" onClick="prev()">&#129144;</button>
+        <div class="dot-container">
+            <button onClick = "dot(1)"></button>
+            <button onClick = "dot(2)"></button>
+            <button onClick = "dot(3)"></button>
+            <button onClick = "dot(4)"></button>
+            <button onClick = "dot(5)"></button>
+            <button onClick = "dot(6)"></button>
+        </div>
+        <button id="next" onClick="next()">&#129146;</button>
+     </div>
+    <main>
+    </main>
+    <script src="main.js"></script>
+</body>
+
+</html>
