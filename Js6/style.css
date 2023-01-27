@@ -1,0 +1,36 @@
+#test{
+    height:205px;
+    width:400px;
+    position:absolute;
+    top: 5%;
+    left: 5%;
+    z-index:200;
+    background-color: grey;
+    opacity: 70%;
+    font-size: 50px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+#test button{
+    opacity: 120%;
+    z-index:201;
+}
+#fps{
+    height:54px;
+}
+button{
+    font-size:30px;
+    background-color: transparent;
+    border-radius: 5%;
+    cursor: pointer;
+}
+#buttons :first-child{
+    background-color:green;
+}
+#buttons :last-child{
+    background-color:red;
+}
+#stats{
+    font-size: 25px;
+}
