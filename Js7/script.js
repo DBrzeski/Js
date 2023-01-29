@@ -39,11 +39,11 @@ function loadtiles(){
   }
   else{
     for(let i = 0;i < cities.length;i++){
-        url = "http://api.openweathermap.org/geo/1.0/direct?q="+cities[i]+"&limit=5&appid=22acf05970637b4f34b8e5107a9cc906"
+        url = "http://api.openweathermap.org/geo/1.0/direct?q="+cities[i]+"&limit=5&appid="+apiKey
       fetch(url)
       .then(response => response.json())
       .then(data => {
-      url2 = "https://api.openweathermap.org/data/2.5/weather?lat="+data[0].lat+"&lon="+data[0].lon+"&appid=22acf05970637b4f34b8e5107a9cc906&units=metric"
+      url2 = "https://api.openweathermap.org/data/2.5/weather?lat="+data[0].lat+"&lon="+data[0].lon+"&appid="+apiKey+"&units=metric"
       fetch(url2)
         .then(response => response.json())
         .then(data => {
