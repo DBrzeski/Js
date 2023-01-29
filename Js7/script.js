@@ -43,8 +43,13 @@ function loadtiles(){
       fetch(url)
       .then(response => response.json())
       .then(data => {
-      url2 = "https://api.openweathermap.org/data/2.5/weather?lat="+data[0].lat+"&lon="+data[0].lon+"&appid="+apiKey+"&units=metric"
-      fetch(url2)
+      if(typeof data[0] == 'undefined' ){
+        console.log("null")
+        tiles.innerHTML += "<div id='tile'><div id='city'>Wrong Place</div><div id='btn'><button onClick='del("+i+")'>Delete</button><div></div>"
+      }
+      else{
+        url2 = "https://api.openweathermap.org/data/2.5/weather?lat="+data[0].lat+"&lon="+data[0].lon+"&appid="+apiKey+"&units=metric"
+        fetch(url2)
         .then(response => response.json())
         .then(data => {
         temperature = data.main.temp.toString().split(".").slice(0, 1) + "°C" 
@@ -53,7 +58,8 @@ function loadtiles(){
       })
       .catch(error => {
         console.error(error)
-      });
+      })
+      }
       })
       .catch(error => {
         console.error(error)
@@ -61,4 +67,3 @@ function loadtiles(){
   }
   }
 }
-
