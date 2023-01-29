@@ -1,0 +1,68 @@
+#tile{
+    height:250px;
+    width:125px;
+    border:1px black solid;
+    border-radius: 5%;
+    background-image: linear-gradient(lightblue, rgb(0, 59, 221));
+    text-align: center;
+    margin-right: 10px;
+    margin-top:10px;
+}
+#city{
+    margin-top:5px;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Roboto', Arial;
+    font-weight: bold;
+    overflow: hidden;
+}
+#icon img{
+    margin:12.5px;
+}
+#temp{
+    font-family: Arial;
+    font-size: 30px;
+    color:grey;
+    text-align: center;
+    font-family: 'Roboto';
+    font-weight: bold;
+}
+#searchbar {
+    width:300px;
+    height:30px;
+}
+#tiles{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    flex-wrap: wrap;
+}
+#add{
+    height:36px;
+    color:green;
+    background: lightgreen;
+    border:green 1px solid;
+    border-left:none;
+    cursor: pointer;
+}
+#search{
+    display:flex;
+    justify-content: center;
+}
+#searchbar:focus {
+    outline: none;
+}
+#tile button{
+    color:red;
+    background-color: rgb(255, 77, 77);
+    border: 1px solid red;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+#btn{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
